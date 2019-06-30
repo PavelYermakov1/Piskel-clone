@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 40px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.header-menu {
+  width: 10%;
+}
+h1 {
+  width: 80%;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+}
+.header-icon {
+  width: 10%;
+}
+
+.menu-img {
+  color: rgba(0, 0, 0, 0.54);
+  mix-blend-mode: normal;
+  margin-left: 20px;
+  width: 30px;
+  height: 20px;
+}
+.icon-img {
+  color: rgba(0, 0, 0, 0.54);
+  mix-blend-mode: normal;
+  margin-left: 100px;
+  width: 5px;
+  height: 25px;
+}
+
+
+main {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #778899;
+}
+
+.instrument-palette button {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #333, #666 );
+}
+
+.instrument-palette button img {
+  filter: invert(1);
+}
+
+.instrument-palette button:hover {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.instrument-palette button:focus {
+  border: 3px solid gold;
+}
+
+
+.instrument-palette {
+  display: flex;
+
+
+}
+.instrument-palette-left {
+  display: flex;
+  flex-direction: column;
+}
+.instrument-palette-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-palette {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.primary-color {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #333, #666 );
+}
+
+.secondary-color {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #333, #666 );
+}
+
+.main-frames {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.frame-action {
+  width: 160px;
+  height: 50px;
+  background: linear-gradient(-45deg, #333, #666 );
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 15px;
+  color: white;
+}
+
+.frame-action img {
+  filter: invert(1);
+  padding-top: 3px;
+}
+
+.frame-action:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.namber {
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 23px;
+}
+.delete {
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  margin-top: -25px;
+  margin-left: 120px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+
+
+.coppy {
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  margin-top: -25px;
+  margin-left: 80px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+
+
+.move {
+  width: 40px;
+  height: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  margin-top: -25px;
+  margin-left: 40px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: move;
+}
+
+
+
+.frame {
+  margin: auto;
+  background-color: rgb(209, 209, 191);
+  box-shadow: 0px 0px 30px 0px rgb(209, 208, 162);
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.main-frames img {
+  filter: invert(1);
+}
+
+.delete:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+.coppy:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+.move:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.general-canvas {
+    background-color:rgb(209, 209, 191);
+    box-shadow: 0px 0px 30px 0px rgb(209, 208, 162);
+    border: 1px solid #ccc;
+    margin:10px;
+}
+
+.main-canvas {
+  border: 1px solid #ccc;
+  background-color: #778899;
+  padding: 40px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview {
+  margin-left: 10px;
+}
+
+.previewCanvas {
+  background-color:rgb(209, 209, 191);
+  box-shadow: 0px 0px 30px 0px rgb(209, 208, 162);
+  border: 1px solid #ccc;
+  height: 240px;
+  width: 240px;
+}
+
+.fullScreen {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  line-height: 40px;
+  cursor: pointer;
+}
+.fullScreen img {
+  filter: invert(1);
+}
+
+.fullScreen:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.fps {
+  width: 220px;
+  height: 25px;
+  background: linear-gradient(-45deg, #333, #666 );
+  color: white;
+  margin-top: -25px;
+  margin-left: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+.number-fps {
+  margin-right: 160px;
+  margin-bottom: -33px;
+  color: white;
+  font-size: 20px;
+  min-width: 55px;
+}
+
+.range-fps {
+  height: 40px;
+  margin: 0;
+  margin-left: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Animation {
+  height: 25px;
+  width: 245px;
+  background: linear-gradient(-45deg, #333, #666 );
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+.Animation:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.choice-canvas {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(-45deg, #333, #666 );
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.choice-canvas:hover {
+  background: linear-gradient(-45deg, rgb(161, 33, 33), rgb(121, 4, 4) );
+}
+
+.canvas-information {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  color: gold;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.size-palette {
+  display: flex;
+  margin-bottom: 5px ;
+  width: 90px;
+  height: 24px;
+}
+
+.penSize {
+  width: 20px;
+  height: 20px;
+  padding: auto;
+  margin: 2px;
+  background: linear-gradient(-45deg, #333, #666 );
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0pt;
+}
+
+.penSizeCurrent {
+  width: 20px;
+  height: 20px;
+  border: 2px solid gold;
+  padding: auto;
+  margin: 2px;
+  background: linear-gradient(-45deg, #333, #666 );
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0pt;
+}
+.square {
+  background-color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.squareCurrent {
+  background-color: gold;
+  margin: auto;
+  text-align: center;
+}
+
+#size1 {
+  width: 4px;
+  height: 4px;
+}
+#size2 {
+  width: 6px;
+  height: 6px;
+}
+#size3 {
+  width: 8px;
+  height: 8px;
+}
+#size4 {
+  width: 10px;
+  height: 10px;
+}
+
+body {
+  background-color: #778899;
+}
+
+.swapImg {
+  filter: invert(1);
+}
+
+.color-swap {
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+#mirazh {
+  transform: rotate(270deg);
+}

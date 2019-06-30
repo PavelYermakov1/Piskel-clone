@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Piskel-clone</title>
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="dist/assets/fonts/font-awesome.min.css">
+  </head>
+  <body>
+      <header>
+          <div class="header-menu"><img class="menu-img" src="dist/assets/shape.png" alt="icon"></div>
+          <h1>Piskel-clone</h1>
+          <div class="header-icon"><img class="icon-img" src="dist/assets/shap.png" alt="icon"></div>
+      </header>
+      <main>
+        <div class="main-instrument">
+          <div class="size-palette" id="size-palette">
+            <div class="penSize"><div class="square" id="size1" >1</div></div>
+            <div class="penSize"><div class="square" id="size2">2</div></div>
+            <div class="penSize"><div class="square" id="size3">3</div></div>
+            <div class="penSize"><div class="square" id="size4">4</div></div>
+          </div>
+          <div class="instrument-palette" id="instrumentTool">
+            <div class="instrument-palette-left" id="left">
+              <button class="pen" id="pen">
+                  <img class="pen"  src="dist/assets/pen.png" alt="1s">
+              </button>
+              <button class="mirrorVertical">
+                  <img class="mirrorVertical" src="dist/assets/mirror.png" alt="2">
+              </button>
+              <button class="eraser">
+                  <img class="eraser" src="dist/assets/eraser.png" alt="3">
+              </button>
+              <button class="rectangle">
+                  <img class="rectangle" src="dist/assets/rectangle.png" alt="4">
+              </button>
+              <button class="motion">
+                  <img class="motion" src="dist/assets/move.png" alt="5">
+              </button>
+              <button class="rectangle-selection">
+                  <img class="rectangle-selection" src="dist/assets/rectangle-selection.png" alt="6">
+              </button>
+              <button class="lighter">
+                  <img class="lighter" src="dist/assets/lighter1.png" alt="7">
+              </button>
+              <button class="color-picker">
+                  <img class="color-picker" src="dist/assets/color-picker.png" alt="8">
+              </button>
+            </div>
+            <div class="instrument-palette-right" id="right">
+              <button class="mirror">
+                  <img class="mirror" id="mirazh" src="dist/assets/mirror.png" alt="9">
+              </button>
+              <button class="bucket-all">
+                  <img class="bucket-all" src="dist/assets/bucket-all.png" alt="10">
+              </button>
+              <button class="stroke">
+                  <img class="stroke" src="dist/assets/stroke.png" alt="11">
+              </button>
+              <button class="circle">
+                  <img class="circle" src="dist/assets/circle.png" alt="12">
+              </button>
+              <button class="chape-selection">
+                  <img class="chape-selection" src="dist/assets/chape-selection.png" alt="13">
+              </button>
+              <button class="lasso">
+                  <img class="lasso" src="dist/assets/lasso.png" alt="14">
+              </button>
+              <button class="table">
+                  <img class="table" src="dist/assets/table.png" alt="14">
+              </button>
+
+            </div>
+          </div>
+          <div class="color-palette">
+            <input class="primary-color" id="primary-color" type="color">
+            <input class="secondary-color" id="secondary-color" type="color">
+            <div class="color-swap" id="swapColor">
+              <img class="swapImg" src="dist/assets/swap.png" alt="14">
+            </div>
+          </div>
+        </div>
+        <div class="main-frames" id="main-frames">
+          <div class="frame-action"><img src="dist/assets/plus.png" alt="15"><br>Add new frame</div>
+          <div class="frame-1" id="1" draggable="false">
+            <div class="namber">1</div>
+            <div class="delete" >X</div>
+            <div class="coppy" id="coppy">
+                <img src="dist/assets/copy.png" alt="18">
+            </div>
+            <div class="move" id="drag" draggable="true">
+                <img src="dist/assets/move-frame.png" alt="18">
+            </div>
+            <canvas class="frame" id="current" width="160" height="160"></canvas>
+          </div>
+        </div>
+        <div class="main-canvas" id="main-canvas">
+          <div class="canvasSizeTemp" id="canvasSizeTemp">
+            <div class="choice-canvas" id="littleCanvas">32</div>
+            <div class="choice-canvas" id="middleCanvas">64</div>
+            <div class="choice-canvas" id="bigCanvas">128</div>
+          </div>
+          <canvas  id="myCanvas" ></canvas>
+        </div>
+        <div class="preview">
+            <canvas id="previewCanvas" class="previewCanvas" width="240" height="240"></canvas>
+            <div class="fullScreen" id="fullScreen">
+                <img src="dist/assets/full-screen1.png" alt="18">
+            </div>
+            <div class="fps">
+                <div id="nuberFps" class="number-fps">12 FPS</div>
+                <input id="inputFps" class="range-fps" type="range" min="0" max="24" step="1">
+            </div>
+            <div class="Animation" id="Animation">Animation</div>
+            <div class="canvas-information">
+              <div class="canvas-size" id="canvas-size"></div>
+              <div class="canvas-coordinates" id="canvas-coordinates"></div>
+            </div>
+        </div>
+      </main>
+  <script type="text/javascript" src="./dist/app.bundl.js"></script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
