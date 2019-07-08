@@ -35,13 +35,13 @@
                   <img class="rectangle" src="dist/assets/rectangle.png" alt="4">
               </button>
               <button class="motion">
-                  <img class="motion" src="dist/assets/move.png" alt="5">
+                  <img class="motion" src="dist/assets/move.png" alt="5" hidden>
               </button>
               <button class="rectangle-selection">
-                  <img class="rectangle-selection" src="dist/assets/rectangle-selection.png" alt="6">
+                  <img class="rectangle-selection" src="dist/assets/rectangle-selection.png" alt="6" hidden>
               </button>
               <button class="lighter">
-                  <img class="lighter" src="dist/assets/lighter1.png" alt="7">
+                  <img class="lighter" src="dist/assets/lighter1.png" alt="7" hidden>
               </button>
               <button class="color-picker">
                   <img class="color-picker" src="dist/assets/color-picker.png" alt="8">
@@ -55,19 +55,19 @@
                   <img class="bucket-all" src="dist/assets/bucket-all.png" alt="10">
               </button>
               <button class="stroke">
-                  <img class="stroke" src="dist/assets/stroke.png" alt="11">
+                  <img class="stroke" src="dist/assets/stroke.png" alt="11" hidden>
               </button>
               <button class="circle">
-                  <img class="circle" src="dist/assets/circle.png" alt="12">
+                  <img class="circle" src="dist/assets/circle.png" alt="12" hidden>
               </button>
               <button class="chape-selection">
-                  <img class="chape-selection" src="dist/assets/chape-selection.png" alt="13">
+                  <img class="chape-selection" src="dist/assets/chape-selection.png" alt="13" hidden>
               </button>
               <button class="lasso">
-                  <img class="lasso" src="dist/assets/lasso.png" alt="14">
+                  <img class="lasso" src="dist/assets/lasso.png" alt="14" hidden>
               </button>
               <button class="table">
-                  <img class="table" src="dist/assets/table.png" alt="14">
+                  <img class="table" src="dist/assets/table.png" alt="14" hidden>
               </button>
 
             </div>
@@ -78,20 +78,32 @@
             <div class="color-swap" id="swapColor">
               <img class="swapImg" src="dist/assets/swap.png" alt="14">
             </div>
+            <div id="keyboard">
+              <img  src="dist/assets/keyboard.png" alt="14">
+              <div class="key" id="key" style="display:none">
+                <div><img class="pen"  src="dist/assets/pen.png" alt="1s"> - P</div>
+                <div><img class="mirrorVertical" src="dist/assets/mirror.png" alt="2"> - V</div>
+                <div><img class="eraser" src="dist/assets/eraser.png" alt="3"> - E</div>
+                <div><img class="color-picker" src="dist/assets/color-picker.png" alt="8"> - C</div>
+                <div><img class="bucket-all" src="dist/assets/bucket-all.png" alt="10"> - B</div>
+                <div><img class="mirror" id="mirazh" src="dist/assets/mirror.png" alt="9"> - H</div>
+                <div><img class="rectangle" src="dist/assets/rectangle.png" alt="4"> - R</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="main-frames" id="main-frames">
-          <div class="frame-action"><img src="dist/assets/plus.png" alt="15"><br>Add new frame</div>
-          <div class="frame-1" id="1" draggable="false">
-            <div class="namber">1</div>
+          <div class="frame-action" id="addFrame"><img src="dist/assets/plus.png" alt="15"><br>Add new frame</div>
+          <div class="frame" id="frame_0">
+            <div class="namber"></div>
             <div class="delete" >X</div>
             <div class="coppy" id="coppy">
                 <img src="dist/assets/copy.png" alt="18">
             </div>
-            <div class="move" id="drag" draggable="true">
-                <img src="dist/assets/move-frame.png" alt="18">
+            <div class="move" id="drag" >
+                <img src="dist/assets/move-frame.png" alt="18" hidden>
             </div>
-            <canvas class="frame" id="current" width="160" height="160"></canvas>
+            <canvas class="canvas canvas_0" id="current" width="160" height="160"></canvas>
           </div>
         </div>
         <div class="main-canvas" id="main-canvas">
@@ -111,13 +123,13 @@
                 <div id="nuberFps" class="number-fps">12 FPS</div>
                 <input id="inputFps" class="range-fps" type="range" min="0" max="24" step="1">
             </div>
-            <div class="Animation" id="Animation">Animation</div>
+            <div class="Animation" id="Animation" hidden>Animation</div>
             <div class="canvas-information">
               <div class="canvas-size" id="canvas-size"></div>
               <div class="canvas-coordinates" id="canvas-coordinates"></div>
             </div>
         </div>
       </main>
-  <script type="text/javascript" src="./dist/app.bundl.js"></script>
+  <script type="text/javascript" src="./dist/app.bundle.js"></script>
 <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>

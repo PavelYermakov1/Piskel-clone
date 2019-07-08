@@ -188,12 +188,17 @@ main {
 
 
 
-.frame {
+.canvas {
   margin: auto;
   background-color: rgb(209, 209, 191);
   box-shadow: 0px 0px 30px 0px rgb(209, 208, 162);
   border: 1px solid #ccc;
   margin-bottom: 10px;
+
+}
+
+.frame {
+  cursor: pointer;
 }
 
 .main-frames img {
@@ -397,4 +402,12 @@ body {
 
 #mirazh {
   transform: rotate(270deg);
+}
+.key div {
+font-size: 25px;
+color: white;
+}
+
+.key div img {
+  filter: invert(1);
 }
